@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('https://images.unsplash.com/photo-1579003593419-98f949b9398f?q=80&w=2946&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="flex justify-center items-center h-screen">
+    <div class="bg-white bg-opacity-90 p-6 rounded-lg shadow-lg text-center">
+        <h1 class="text-3xl font-bold mb-4 text-gray-800">Weather App</h1>
+        <input type="text" id="city" class="border border-gray-300 rounded px-3 py-2 mr-2" placeholder="Enter city">
+        <select id="unit" class="border border-gray-300 rounded px-3 py-2 mr-2">
+            <option value="metric">°C</option>
+            <option value="imperial">°F</option>
+        </select>
+        <button id="getWeather" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Get Weather</button>
+        <div id="weatherResult" class="mt-4 text-gray-700"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
